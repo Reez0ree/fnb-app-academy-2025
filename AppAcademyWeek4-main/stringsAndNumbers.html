@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- Number and Strings -->
+<p id="outputText"></p>
+
+<script>
+/* ========Number and Strings=========== */
+var text1 = "10";
+var text2 = "2";
+
+var num1 = stringsToNumber(text1);
+var num2 = stringsToNumber(text2);
+
+if(isNaN(num1) || isNaN(num2)){
+    document.getElementById("outputText").innerHTML = "You have not entered a valid number";
+} else{
+        document.getElementById("outputText").innerHTML = num1 / num2;
+}
+
+//document.getElementById("outputText").innerHTML = num1 + num2;
+
+function stringsToNumber(text){
+    return parseInt(text);
+}
+</script>
+
+</body>
+</html>

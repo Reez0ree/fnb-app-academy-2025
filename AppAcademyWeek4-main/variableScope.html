@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- Variable Scope -->
+
+    <p id="outputText"></p>
+
+<script>
+/* ========Variable Scope=========== */
+var someVariable = 100;
+someFunction();
+
+function someFunction(){
+    document.getElementById("outputText").innerHTML = someVariable;
+}
+
+</script>
+
+</body>
+</html>
